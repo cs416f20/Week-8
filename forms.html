@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inputs</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<form action="results.html" method="get">
+
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" name="username" placeholder="Enter your username" id="username" required>
+    </div>
+
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter your password" id="password">
+    </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" id="email" required>
+    </div>
+
+
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" name="age" placeholder="Enter your age" id="age">
+    </div>
+
+    <div>
+        Gender
+        <div>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+        </div>
+    </div>
+
+
+    <div>
+        Vehicle you own (select all apply)
+        <div>
+            <input type="checkbox" name="vehicle" value="car" id="car">
+            <label for="car">Car</label>
+        </div>
+        <div>
+            <input type="checkbox" name="vehicle" value="bike" id="bike">
+            <label for="bike">Bike</label>
+        </div>
+    </div>
+
+    <div>
+        <label for="cars">Car Model</label>
+
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="honda">Honda</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="cars-multiple">Car Model Multiple</label>
+
+        <select name="cars" id="cars-multiple" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="honda">Honda</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio">This is a large text area.</textarea>
+    </div>
+
+    <div>
+        <label for="file">File</label>
+        <input type="file" name="file" id="file">
+    </div>
+
+    <!-- Hidden type can be used to transfer data without asking the user to provide input data
+    For examplee, the following input field submits hello along with rest of the form data when-the form is submitted-->
+    <input type="hidden" name="hidden" value="hello">
+
+    <div>
+        <label for="date">Date of birth</label>
+        <input type="date" name="date" min="2020-10-10" id="date">
+    </div>
+
+
+    <input type="reset">
+    <input type="submit">
+
+</form>
+
+</body>
+</html>
